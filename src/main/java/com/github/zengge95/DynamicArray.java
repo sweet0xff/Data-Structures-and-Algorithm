@@ -40,4 +40,22 @@ public class DynamicArray<E> {
     public void set(int index, E newElement){
         element[index] = newElement;
     }
+    //根据索引删除
+    public E remove(int index){
+        E oldValue = get(index);
+        int numMoved = size - index - 1;
+        if (numMoved > 0){
+            System.arraycopy(element,index + 1, element, index, numMoved);
+        }
+        element[--size] = null;
+        return oldValue;
+    }
+
+    //根据索引添加
+    public void add(int index, E elementData){
+        ensureCapacity(size + 1);
+        System.arraycopy(element, index, element, index + 1, size - index);
+        element[index] = elementData;
+        size++;
+    }
 }
