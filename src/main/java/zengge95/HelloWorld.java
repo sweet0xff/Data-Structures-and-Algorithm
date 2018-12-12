@@ -1,4 +1,4 @@
-package com.github.zengge95;
+package zengge95;
 
 public class HelloWorld {
     public static void main(String[] args) {
