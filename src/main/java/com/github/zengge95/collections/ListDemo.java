@@ -11,6 +11,9 @@ public class ListDemo {
         list.add(4);
         list.add(3);
         Iterator iterator = list.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
 
     }
 
