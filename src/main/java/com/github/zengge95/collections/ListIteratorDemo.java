@@ -11,11 +11,18 @@ public class ListIteratorDemo {
         list.add(4);
         list.add(3);
         Iterator iterator = list.iterator(); // 迭代器用法
+
         while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+            if (iterator.next().equals(2)) { // 调用 remove 方法之前一定要调用 next() 方法
+                iterator.remove();
+            }
         }
 
+        Iterator iterator1 = list.iterator();
 
+        while (iterator1.hasNext()) {
+            System.out.println(iterator1.next());
+        }
 
         List<Integer> listdemo = new ArrayList<>();
         System.out.println("listDemo 的 size 为：" + listdemo.size());
