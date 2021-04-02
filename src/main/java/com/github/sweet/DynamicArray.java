@@ -1,4 +1,4 @@
-package com.github.zengge95;
+package com.github.sweet;
 
 import java.util.Arrays;
 

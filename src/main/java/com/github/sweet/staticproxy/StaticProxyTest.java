@@ -1,4 +1,4 @@
-package com.github.zengge95.staticproxy;
+package com.github.sweet.staticproxy;
 
 public class StaticProxyTest {
     public static void main(String[] args) {

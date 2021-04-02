@@ -1,4 +1,4 @@
-package com.github.zengge95.staticproxy;
+package com.github.sweet.staticproxy;
 
 /**
  * 创建一个 Person 接口

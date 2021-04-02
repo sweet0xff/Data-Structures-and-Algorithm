@@ -1,4 +1,4 @@
-package com.github.zengge95.collections;
+package com.github.sweet.collections;
 
 import java.util.ArrayList;
 import java.util.Iterator;
