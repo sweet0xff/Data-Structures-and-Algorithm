@@ -12,6 +12,7 @@ public class StudentProxy implements Person {
         }
     }
 
+    @Override
     public void giveHomework() {
         stu.giveHomework();
     }

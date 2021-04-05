@@ -10,10 +10,11 @@ public class ListIteratorDemo {
         list.add(2);
         list.add(4);
         list.add(3);
-        Iterator iterator = list.iterator(); // 迭代器用法
+        Iterator iterator = list.iterator();
 
         while (iterator.hasNext()) {
-            if (iterator.next().equals(2)) { // 调用 remove 方法之前一定要调用 next() 方法
+            // 调用 remove 方法之前一定要调用 next() 方法
+            if (iterator.next().equals(2)) {
                 iterator.remove();
             }
         }
