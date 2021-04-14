@@ -5,7 +5,9 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * 比较索引遍历，迭代器遍历，for循环遍历三种方式的遍历效率
+ * @author
+ * @description 比较索引遍历，迭代器遍历，for循环遍历三种方式的遍历效率
+ * @date
  */
 public class ArrayListIteratorDemo {
     public static void main(String[] args) {
@@ -24,7 +26,7 @@ public class ArrayListIteratorDemo {
         long endTime;
         startTime = System.currentTimeMillis();
         for (int i = 0; i < list.size(); i++) {
-            list.get(i);
+            System.out.println(list.get(i));
         }
         endTime = System.currentTimeMillis();
         System.out.println("iteratorThroughRandomAccess 用时：" + (endTime - startTime) + "ms");
@@ -34,9 +36,7 @@ public class ArrayListIteratorDemo {
         long startTime;
         long endTime;
         startTime = System.currentTimeMillis();
-        for (Iterator iter = list.iterator();
-            iter.hasNext(); ) {
-            iter.next();
+        for (Object o : list) {
         }
         endTime = System.currentTimeMillis();
         System.out.println("iteratorThroughIterator 用时：" + (endTime - startTime) + "ms");
@@ -47,7 +47,7 @@ public class ArrayListIteratorDemo {
         long endTime;
         startTime = System.currentTimeMillis();
         for(Object obj:list){
-            ;
+            System.out.println(obj.toString());
         }
         endTime = System.currentTimeMillis();
         System.out.println("interatorThroughFOreach 用时：" + (endTime - startTime) + "ms");

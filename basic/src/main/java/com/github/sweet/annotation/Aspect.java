@@ -8,9 +8,10 @@ import java.lang.annotation.Target;
 /**
  * @description
  * @date 2021/4/5 15:27
+ * @author
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 public @interface Aspect {
-    public Class type();
+    Class type();
 }

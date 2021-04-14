@@ -8,6 +8,11 @@ public class Student implements Person {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    @Override
     public void giveHomework() {
         System.out.println(name + "上交家庭作业");
     }

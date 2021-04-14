@@ -18,7 +18,7 @@ public class RandomStringGenerator<T> implements Iterable<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return new Iterator<T>() {
+        return new Iterator<>() {
             @Override
             public boolean hasNext() {
                 return true;

@@ -5,6 +5,5 @@ package com.github.sweet.staticproxy;
  */
 public interface Person {
 
-    //交家庭作业
     void giveHomework();
 }
