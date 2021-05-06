@@ -1,4 +1,4 @@
-package com.github.sweet.annotation;
+package com.github.sweet.proxy.annotation;
 
 /**
  * @description

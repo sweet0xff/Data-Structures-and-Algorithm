@@ -1,4 +1,4 @@
-package com.github.sweet.proxy;
+package com.github.sweet.proxy.reflect;
 
 import com.github.sweet.monad.Try;
 

@@ -1,15 +1,17 @@
-package com.github.sweet.proxy;
+package com.github.sweet.proxy.annotation;
 
 import java.lang.reflect.InvocationTargetException;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @description
- * @date 2021/4/5 10:35
+ * @date 2021/4/5 16:21
  */
-public class ProxyExampleTest {
+public class AnnotationTest {
     public static void main(String[] args) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, InterruptedException {
-        IOrder order = Aspect.getProxy(Order.class, "com.github.sweet.proxy.TimeUsageAspect");
+        IOrder order = ObjectFactory.newInstance(Order.class);
         order.pay();
         order.show();
+        AtomicInteger a = new AtomicInteger();
     }
 }

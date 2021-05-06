@@ -1,4 +1,4 @@
-package com.github.sweet.staticproxy;
+package com.github.sweet.proxy.demo;
 
 
 public class Student implements Person {

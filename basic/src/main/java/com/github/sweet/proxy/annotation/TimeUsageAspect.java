@@ -1,10 +1,10 @@
-package com.github.sweet.proxy;
+package com.github.sweet.proxy.annotation;
 
 /**
  * @description
  * @date 2021/4/4 21:20
  */
-public class TimeUsageAspect implements Aspect{
+public class TimeUsageAspect implements IAspect {
 
     private long start;
 

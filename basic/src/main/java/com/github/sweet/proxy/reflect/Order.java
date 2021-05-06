@@ -1,11 +1,10 @@
-package com.github.sweet.annotation;
+package com.github.sweet.proxy.reflect;
 
 /**
  * @description
  * @date 2021/4/4 21:24
  */
-@Aspect(type = TimeUsageAspect.class)
-public class Order implements IOrder {
+public class Order implements IOrder{
     private int state = 0;
 
     @Override

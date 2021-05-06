@@ -1,4 +1,4 @@
-package com.github.sweet.annotation;
+package com.github.sweet.proxy.annotation;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationHandler;
