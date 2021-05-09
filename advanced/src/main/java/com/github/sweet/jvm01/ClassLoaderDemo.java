@@ -1,4 +1,4 @@
-package com.github.sweet.jvm0104;
+package com.github.sweet.jvm01;
 
 import java.lang.reflect.Field;
 import java.net.URLClassLoader;

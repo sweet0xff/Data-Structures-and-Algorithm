@@ -1,4 +1,4 @@
-package com.github.sweet.jvm0104;
+package com.github.sweet.jvm02;
 
 import java.io.FileInputStream;
 import java.io.IOException;
