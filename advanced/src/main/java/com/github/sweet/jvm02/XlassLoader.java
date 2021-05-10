@@ -29,7 +29,8 @@ public class XlassLoader extends ClassLoader{
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
         String path = this.getClass().getClassLoader().getResource("").getPath();
-        String packageName = "com.github.sweet.jvm0104";
+        //暂时写死路径
+        String packageName = "com.github.sweet.jvm02";
         String resourceName = packageName.replace(".", "/");
         String fullPath = path + resourceName + "/" + name +  ".xlass";
         InputStream inputStream = null;
