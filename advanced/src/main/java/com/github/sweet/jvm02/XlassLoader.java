@@ -54,7 +54,12 @@ public class XlassLoader extends ClassLoader{
         }
     }
 
-    // 解码, Hello.class 的文件是所有字节（x=255-x）经处理后的文件
+    /**
+     * @description 解码, Hello.class 的文件是所有字节（x=255-x）经处理后的文件
+     * @date 2021/5/11 16:25
+     * @param
+     * @return
+     */
     private static byte[] decode(byte[] byteArray) {
         byte[] targetArray = new byte[byteArray.length];
         for (int i = 0; i < byteArray.length; i++) {
