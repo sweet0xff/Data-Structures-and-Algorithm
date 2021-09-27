@@ -1,7 +1,6 @@
-package com.github.sweet.collections;
+package com.github.sweet.collection;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**

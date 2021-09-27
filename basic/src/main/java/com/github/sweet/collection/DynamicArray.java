@@ -1,4 +1,4 @@
-package com.github.sweet.collections;
+package com.github.sweet.collection;
 
 import java.util.Arrays;
 

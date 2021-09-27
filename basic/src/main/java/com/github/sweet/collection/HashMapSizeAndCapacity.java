@@ -1,4 +1,4 @@
-package com.github.sweet.collections;
+package com.github.sweet.collection;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
