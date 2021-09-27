@@ -39,7 +39,7 @@ public class HashSetAndTreeSet {
         System.out.println(treeSet.floor(a));
         System.out.println(treeSet.stream().map(x -> x.toString()).collect(Collectors.joining(",")));
 
-        Map map = new HashMap();
+        Map map = new HashMap(32);
     }
 }
 
