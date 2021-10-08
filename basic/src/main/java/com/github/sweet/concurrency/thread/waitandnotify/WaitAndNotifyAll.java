@@ -8,14 +8,15 @@ package com.github.sweet.concurrency.thread.waitandnotify;
 public class WaitAndNotifyAll implements Runnable{
     private static final Object object = new Object();
     public static void main(String[] args) throws InterruptedException {
-        Thread thread1 = new Thread(new WaitAndNotifyAll());
-        Thread thread2 = new Thread(new WaitAndNotifyAll());
+        WaitAndNotifyAll waitAndNotifyAll = new WaitAndNotifyAll();
+        Thread thread1 = new Thread(waitAndNotifyAll);
+        Thread thread2 = new Thread(waitAndNotifyAll);
 
         Thread thread3 = new Thread(() -> {
             synchronized (object) {
                 System.out.println(Thread.currentThread().getName() + " notify");
-//                object.notifyAll();
-                object.notify();
+                object.notifyAll();
+//                object.notify();
             }
         });
         thread1.start();
