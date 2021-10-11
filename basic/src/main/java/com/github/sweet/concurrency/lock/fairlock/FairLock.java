@@ -40,13 +40,22 @@ class DoSomething implements Runnable{
     }
 }
 
+/**
+ *   非公平锁日志打印如下
+ *   Thread-0开始
+ *   Thread-0正在干活1，需要3秒
+ *   Thread-1开始
+ *   Thread-2开始
+ *   Thread-0正在干活2，需要3秒
+ *   ...
+ */
 class Waiting {
-    private ReentrantLock reentrantLock = new ReentrantLock(true);
+    private ReentrantLock reentrantLock = new ReentrantLock(false);
     public void printJob() {
         reentrantLock.lock();
         try {
             int duration = new Random().nextInt(10) + 1;
-            System.out.println(Thread.currentThread().getName() + "正在干活，需要" + duration + "秒");
+            System.out.println(Thread.currentThread().getName() + "正在干活1，需要" + duration + "秒");
             Thread.sleep(duration * 1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -57,7 +66,7 @@ class Waiting {
         reentrantLock.lock();
         try {
             int duration = new Random().nextInt(10) + 1;
-            System.out.println(Thread.currentThread().getName() + "正在干活，需要" + duration+"秒");
+            System.out.println(Thread.currentThread().getName() + "正在干活2，需要" + duration+"秒");
             Thread.sleep(duration * 1000);
         } catch (InterruptedException e) {
             e.printStackTrace();

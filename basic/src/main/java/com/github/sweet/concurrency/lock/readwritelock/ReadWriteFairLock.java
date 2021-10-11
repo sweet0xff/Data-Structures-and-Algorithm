@@ -8,7 +8,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * @date 2021/10/9 13:14
  */
 public class ReadWriteFairLock {
-    static ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock(false);
+    static ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
     static ReentrantReadWriteLock.WriteLock writeLock = reentrantReadWriteLock.writeLock();
     static ReentrantReadWriteLock.ReadLock readLock = reentrantReadWriteLock.readLock();
 
