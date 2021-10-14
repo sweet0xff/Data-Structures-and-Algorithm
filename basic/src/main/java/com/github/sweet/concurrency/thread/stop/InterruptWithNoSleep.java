@@ -20,7 +20,7 @@ public class InterruptWithNoSleep implements Runnable {
     public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(new InterruptWithNoSleep());
         thread.start();
-        Thread.sleep(100);
+        Thread.sleep(10);
         thread.interrupt();
     }
 }
