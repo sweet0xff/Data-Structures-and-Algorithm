@@ -2,7 +2,7 @@ package com.github.sweet.concurrency.singleton;
 
 /**
  * @author sweet
- * @description 静态常量法
+ * @description 静态常量法，can not lazy load
  * @date 2021/10/8 14:51
  */
 public class Singleton1 {
