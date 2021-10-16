@@ -1,4 +1,4 @@
-package com.github.sweet.concurrency.thread;
+package com.github.sweet.concurrency.thread.threadgroup;
 
 import java.util.Arrays;
 

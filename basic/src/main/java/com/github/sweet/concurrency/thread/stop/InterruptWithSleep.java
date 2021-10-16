@@ -2,7 +2,7 @@ package com.github.sweet.concurrency.thread.stop;
 
 /**
  * @author
- * @description 发出interrupt指令，存在sleep情况,
+ * @description 发出interrupt指令，存在sleep情况, catch 后中断标志会被清除
  * !Thread.currentThread().isInterrupted()判断是多余的
  * @date 2021/9/28 14:34
  */
