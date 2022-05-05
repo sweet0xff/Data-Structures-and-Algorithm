@@ -1,4 +1,4 @@
-package com.github.sweet.collection;
+package com.github.sweet.methodref;
 
 import java.util.ArrayList;
 

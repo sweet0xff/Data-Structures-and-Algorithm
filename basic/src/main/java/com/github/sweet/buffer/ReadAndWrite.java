@@ -20,7 +20,7 @@ public class ReadAndWrite {
         BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(fileName), bufferSize);
 
         long start = System.currentTimeMillis();
-        for(int i = 0; i < 100000000; i++) {
+        for (int i = 0; i < 100000000; i++) {
             for (int j = 0; j < 5; j++) {
                 bufferedOutputStream.write(97 + r.nextInt(5));
             }
@@ -55,5 +55,21 @@ public class ReadAndWrite {
         long end = System.currentTimeMillis();
         System.out.println((end - start) + "ms");
         fileInputStream.close();
+    }
+
+    @Test
+    public void testStr() {
+        System.out.println(strToHexStr("27309810"));
+        System.out.println(Long.toHexString(Long.parseLong("27309810")));
+        System.out.println(strToHexStr("76496609"));
+    }
+
+    public String strToHexStr(String str) {
+        String hexStr = Long.toHexString(Long.parseLong(str));
+        StringBuilder res = new StringBuilder();
+        for (int i = 0; i < hexStr.length() / 2; i++) {
+            res.insert(0, hexStr.substring(i * 2, i * 2 + 2));
+        }
+        return res.toString().toUpperCase();
     }
 }

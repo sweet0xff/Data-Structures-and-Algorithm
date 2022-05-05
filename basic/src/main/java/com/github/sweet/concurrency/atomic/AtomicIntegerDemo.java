@@ -30,5 +30,8 @@ public class AtomicIntegerDemo {
     public static void main(String[] args) {
         AtomicInteger atomicInteger = new AtomicInteger();
         AtomicIntegerDemo demo = new AtomicIntegerDemo(1);
+        System.out.println(atomicInteger.getAndIncrement());
+        System.out.println(atomicInteger.incrementAndGet());
+        System.out.println(atomicInteger.addAndGet(5));
     }
 }

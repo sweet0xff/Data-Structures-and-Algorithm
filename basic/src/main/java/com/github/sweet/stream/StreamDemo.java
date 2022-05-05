@@ -1,4 +1,4 @@
-package com.github.sweet.collection.stream;
+package com.github.sweet.stream;
 
 import java.util.Optional;
 import java.util.stream.IntStream;
